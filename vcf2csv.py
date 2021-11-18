@@ -62,9 +62,7 @@ class Recipient:
 
 
 def cli():
-    p = argparse.ArgumentParser(
-        description="convert apple VCF into CSV"
-    )
+    p = argparse.ArgumentParser(description="convert apple VCF into CSV")
     p.add_argument("contacts", type=argparse.FileType(mode="r"))
     p.add_argument(
         "--fields",
